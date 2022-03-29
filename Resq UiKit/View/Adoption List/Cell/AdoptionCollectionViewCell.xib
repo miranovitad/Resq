@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="adoptionCard" id="gTV-IL-0wX" customClass="AdoptionCollectionViewCell" customModule="Resq_UiKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="197" height="272"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="197" height="272"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ajg 1" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o4k-Dg-xsV">
+                        <rect key="frame" x="0.0" y="0.0" width="197" height="197"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="o4k-Dg-xsV" secondAttribute="height" multiplier="1:1" id="rxj-Gp-DW2"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsm-d4-r0p">
+                        <rect key="frame" x="10" y="210" width="80" height="21"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Pet Name">
+                                <attributes>
+                                    <font key="NSFont" size="18" name="SFProRounded-Regular"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Zv-DZ-47z">
+                        <rect key="frame" x="10" y="237" width="50" height="17.5"/>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.5 years" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gq-CG-XV9">
+                        <rect key="frame" x="71" y="237" width="61.5" height="17.5"/>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="|" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0X-bc-NX3">
+                        <rect key="frame" x="64" y="240" width="3" height="12"/>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="10"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="f0X-bc-NX3" firstAttribute="centerY" secondItem="8Zv-DZ-47z" secondAttribute="centerY" id="5WD-vB-Dk2"/>
+                <constraint firstItem="f0X-bc-NX3" firstAttribute="leading" secondItem="8Zv-DZ-47z" secondAttribute="trailing" constant="4" id="8mE-KI-NIi"/>
+                <constraint firstItem="o4k-Dg-xsV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="9TW-HM-UEk"/>
+                <constraint firstItem="1gq-CG-XV9" firstAttribute="leading" secondItem="f0X-bc-NX3" secondAttribute="trailing" constant="4" id="MG1-IG-qg0"/>
+                <constraint firstItem="jsm-d4-r0p" firstAttribute="top" secondItem="o4k-Dg-xsV" secondAttribute="bottom" constant="13" id="Qi6-DK-yO4"/>
+                <constraint firstItem="8Zv-DZ-47z" firstAttribute="top" secondItem="jsm-d4-r0p" secondAttribute="bottom" constant="6" id="VCo-CC-W7h"/>
+                <constraint firstItem="jsm-d4-r0p" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="WEE-PN-a5A"/>
+                <constraint firstItem="1gq-CG-XV9" firstAttribute="centerY" secondItem="8Zv-DZ-47z" secondAttribute="centerY" id="Wfj-0H-lau"/>
+                <constraint firstItem="8Zv-DZ-47z" firstAttribute="leading" secondItem="jsm-d4-r0p" secondAttribute="leading" id="bjL-s6-Wjw"/>
+                <constraint firstAttribute="trailing" secondItem="o4k-Dg-xsV" secondAttribute="trailing" id="jnV-Ed-eKS"/>
+                <constraint firstItem="o4k-Dg-xsV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wQ8-EQ-bZp"/>
+            </constraints>
+            <size key="customSize" width="239" height="272"/>
+            <connections>
+                <outlet property="petAge" destination="1gq-CG-XV9" id="ZP8-lC-Y4l"/>
+                <outlet property="petGender" destination="8Zv-DZ-47z" id="3QY-KV-Vwc"/>
+                <outlet property="petImage" destination="o4k-Dg-xsV" id="b7y-ZZ-xnL"/>
+                <outlet property="petName" destination="jsm-d4-r0p" id="FNd-N2-Z0H"/>
+            </connections>
+            <point key="canvasLocation" x="196.37681159420291" y="150.66964285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Ajg 1" width="167" height="231"/>
+    </resources>
+</document>

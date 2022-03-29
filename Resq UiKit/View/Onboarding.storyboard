@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingViewController" title="Onboarding" id="Y6W-OH-hqX" customClass="OnBoarding2ViewController" customModule="Resq_UiKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SearchLogo" translatesAutoresizingMaskIntoConstraints="NO" id="fGk-Gx-blP">
+                                <rect key="frame" x="177.66666666666666" y="164" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="YDc-oK-BR1"/>
+                                    <constraint firstAttribute="height" constant="35" id="YSE-Nt-IYn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can easily see the list of adoptable pet and their backgroud story in your area." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pk0-9Y-XC9">
+                                <rect key="frame" x="30" y="219" width="330" height="40.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" systemColor="systemBackgroundColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PaperLogo" translatesAutoresizingMaskIntoConstraints="NO" id="uTm-0j-Ug4">
+                                <rect key="frame" x="175" y="289.66666666666669" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="151-Uu-c4J"/>
+                                    <constraint firstAttribute="width" constant="40" id="dYK-jB-qY6"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can easily submit the adoption form from our app and track the proggres. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhU-d3-HCv">
+                                <rect key="frame" x="30" y="349.66666666666669" width="330" height="40.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DogOnboardLogo" translatesAutoresizingMaskIntoConstraints="NO" id="teQ-bL-q8u">
+                                <rect key="frame" x="80" y="479" width="230" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="Wuo-yd-GAt"/>
+                                    <constraint firstAttribute="width" constant="230" id="YN3-M9-oh9"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NsU-ct-kAH">
+                                <rect key="frame" x="50" y="759" width="290" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="yLQ-0z-AyR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Start the app">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Tzw-WR-JCn" kind="presentation" modalPresentationStyle="fullScreen" id="Q6d-aI-SiM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.30196078430000001" green="0.66274509800000003" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pk0-9Y-XC9" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="30" id="2Pj-ss-50i"/>
+                            <constraint firstItem="hhU-d3-HCv" firstAttribute="top" secondItem="uTm-0j-Ug4" secondAttribute="bottom" constant="20" id="4ur-Ra-PS9"/>
+                            <constraint firstItem="Pk0-9Y-XC9" firstAttribute="top" secondItem="fGk-Gx-blP" secondAttribute="bottom" constant="20" id="6KX-MQ-z9h"/>
+                            <constraint firstItem="fGk-Gx-blP" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="7dW-CC-Tcj"/>
+                            <constraint firstItem="fGk-Gx-blP" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="120" id="8Mc-e0-XwZ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="NsU-ct-kAH" secondAttribute="bottom" constant="12" id="9q5-DP-gfV"/>
+                            <constraint firstItem="teQ-bL-q8u" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="C24-1J-dqF"/>
+                            <constraint firstItem="hhU-d3-HCv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="ITH-kp-KDT"/>
+                            <constraint firstItem="uTm-0j-Ug4" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Jsw-jY-EXy"/>
+                            <constraint firstItem="NsU-ct-kAH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="50" id="KIY-9u-fmt"/>
+                            <constraint firstItem="hhU-d3-HCv" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="LwI-en-pLQ"/>
+                            <constraint firstItem="NsU-ct-kAH" firstAttribute="top" secondItem="teQ-bL-q8u" secondAttribute="bottom" constant="50" id="LyX-bU-ITP"/>
+                            <constraint firstAttribute="trailing" secondItem="Pk0-9Y-XC9" secondAttribute="trailing" constant="30" id="Pet-s0-EfW"/>
+                            <constraint firstItem="Pk0-9Y-XC9" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="RSL-yc-q63"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="NsU-ct-kAH" secondAttribute="trailing" constant="50" id="YIa-wo-9bE"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="hhU-d3-HCv" secondAttribute="trailing" constant="30" id="cw8-fa-Ls9"/>
+                            <constraint firstItem="uTm-0j-Ug4" firstAttribute="top" secondItem="Pk0-9Y-XC9" secondAttribute="bottom" constant="30" id="w95-bi-YBo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ButtonApps" destination="NsU-ct-kAH" id="3Ob-fT-qU0"/>
+                        <outlet property="buttonApps" destination="NsU-ct-kAH" id="yHl-IY-OFy"/>
+                        <outlet property="labelA" destination="Pk0-9Y-XC9" id="OHB-2s-vde"/>
+                        <outlet property="labelAtas" destination="Pk0-9Y-XC9" id="exe-Kk-SbN"/>
+                        <outlet property="labelB" destination="hhU-d3-HCv" id="5KP-mm-hOX"/>
+                        <outlet property="labelBawah" destination="hhU-d3-HCv" id="3G8-ID-fU4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.46153846153845" y="105.92417061611374"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="hYT-lS-Jhn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="Tzw-WR-JCn" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bFZ-lC-Y2Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="610" y="189"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DogOnboardLogo" width="225" height="252"/>
+        <image name="PaperLogo" width="36" height="33"/>
+        <image name="SearchLogo" width="34" height="35"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

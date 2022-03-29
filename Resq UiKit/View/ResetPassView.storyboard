@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Reset View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="ResetViewController" customModule="Resq_UiKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dO-Aa-u0x">
+                                <rect key="frame" x="50" y="64" width="314" height="42"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Reset Password ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.096655614670000001" green="0.66431069369999995" blue="0.94905489679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="36" name="SFProRounded-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="amc-FF-Bes">
+                                <rect key="frame" x="50" y="189.5" width="314" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="V33-Rr-nsp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0sk-vY-osG">
+                                <rect key="frame" x="50" y="249.5" width="314" height="40"/>
+                                <color key="backgroundColor" red="0.072315327819999997" green="0.67162895199999995" blue="0.97650772330000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="UFM-cB-gvJ"/>
+                                </constraints>
+                                <state key="normal" title="Send Instruction">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Y2Z-P3-pQr" kind="show" id="uED-rS-pbH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="Ovl-sS-kG0">
+                                <rect key="frame" x="50" y="114" width="314" height="45.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Enter the Email associated with your account
+and we’ll send an email with instruction to 
+reset your password</string>
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="SFProText-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ovl-sS-kG0" firstAttribute="top" secondItem="0dO-Aa-u0x" secondAttribute="bottom" constant="8" id="Ad3-GO-k3V"/>
+                            <constraint firstItem="amc-FF-Bes" firstAttribute="top" secondItem="Ovl-sS-kG0" secondAttribute="bottom" constant="30" id="BWN-op-Ivd"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="0sk-vY-osG" secondAttribute="trailing" constant="50" id="GzI-6H-8jd"/>
+                            <constraint firstItem="0sk-vY-osG" firstAttribute="top" secondItem="amc-FF-Bes" secondAttribute="bottom" constant="20" id="HJj-Ts-Am7"/>
+                            <constraint firstItem="0dO-Aa-u0x" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="50" id="IWb-Hg-yjF"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="0dO-Aa-u0x" secondAttribute="trailing" constant="50" id="Ncn-5y-zsv"/>
+                            <constraint firstItem="0dO-Aa-u0x" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="OLZ-qZ-paQ"/>
+                            <constraint firstItem="amc-FF-Bes" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="50" id="Xo8-lm-2kx"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Ovl-sS-kG0" secondAttribute="trailing" constant="50" id="j97-gT-GSF"/>
+                            <constraint firstItem="Ovl-sS-kG0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="50" id="jmv-EW-ddj"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="amc-FF-Bes" secondAttribute="trailing" constant="50" id="vdU-6q-Ll5"/>
+                            <constraint firstItem="0sk-vY-osG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="50" id="zow-iF-fxB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonSend" destination="0sk-vY-osG" id="ggA-Wj-XEn"/>
+                        <outlet property="labelDescription" destination="Ovl-sS-kG0" id="R0M-5s-sB6"/>
+                        <outlet property="labelReset" destination="0dO-Aa-u0x" id="giU-0H-Beh"/>
+                        <outlet property="textEmail" destination="amc-FF-Bes" id="T5V-66-PxS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="448" y="58"/>
+        </scene>
+        <!--LoginView-->
+        <scene sceneID="ve7-Pk-oaZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LoginView" id="Y2Z-P3-pQr" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="HeD-en-Wch"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Fe-TN-8z3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="936" y="-86"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

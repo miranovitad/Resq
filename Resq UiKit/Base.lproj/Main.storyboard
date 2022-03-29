@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sef-5S-ZE9">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="7vz-IM-VaC">
+            <objects>
+                <tabBarController id="254-o6-2wr" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cmd-YT-jyV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="0eq-KD-MGI" kind="relationship" relationship="viewControllers" id="eCI-kX-zSA"/>
+                        <segue destination="U5C-Ut-fKJ" kind="relationship" relationship="viewControllers" id="Whr-Mq-Ibm"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Fb-yJ-sJE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="595" y="-49"/>
+        </scene>
+        <!--UserProfile-->
+        <scene sceneID="jhL-9b-mnB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UserProfile" id="U5C-Ut-fKJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="person.circle" catalog="system" badgeValue="Profile" selectedImage="person.circle" id="5SM-0g-cVf">
+                        <color key="badgeColor" red="0.30196078430000001" green="0.66274509800000003" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBarItem>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qUd-UA-SPT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1098" y="-87"/>
+        </scene>
+        <!--AdoptionList-->
+        <scene sceneID="Dhq-dJ-eck">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AdoptionList" id="0eq-KD-MGI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="text.magnifyingglass" catalog="system" badgeValue="List" selectedImage="text.magnifyingglass" id="Ufy-1f-EEM">
+                        <color key="badgeColor" red="0.30196078430000001" green="0.66274509800000003" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBarItem>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sb6-f9-lRw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1090" y="-199"/>
+        </scene>
+        <!--Onboarding-->
+        <scene sceneID="egm-gM-7SV">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingViewController" title="Onboarding" id="sef-5S-ZE9" customClass="OnBoarding2ViewController" customModule="Resq_UiKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oZj-73-13L">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SearchLogo" translatesAutoresizingMaskIntoConstraints="NO" id="QCt-gZ-aC5">
+                                <rect key="frame" x="177.66666666666666" y="164" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="AdL-cH-df0"/>
+                                    <constraint firstAttribute="height" constant="35" id="VNa-JM-LkX"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can easily see the list of adoptable pet and their backgroud story in your area." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZe-lK-zV2">
+                                <rect key="frame" x="30" y="214" width="330" height="40.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" systemColor="systemBackgroundColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PaperLogo" translatesAutoresizingMaskIntoConstraints="NO" id="1g9-fn-yFk">
+                                <rect key="frame" x="175" y="284.66666666666669" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="lgY-ml-6mR"/>
+                                    <constraint firstAttribute="width" constant="40" id="zjt-qd-mLl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can easily submit the adoption form from our app and track the proggres. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebg-YI-90u">
+                                <rect key="frame" x="30" y="339.66666666666669" width="330" height="40.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DogOnboardLogo" translatesAutoresizingMaskIntoConstraints="NO" id="LgV-fW-6d9">
+                                <rect key="frame" x="80" y="479" width="230" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="OEu-bb-6Ch"/>
+                                    <constraint firstAttribute="height" constant="230" id="Uxg-zT-p3Z"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMS-7j-94A">
+                                <rect key="frame" x="50" y="759" width="290" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="hi0-Aj-QIu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Start the app">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="254-o6-2wr" kind="presentation" modalPresentationStyle="fullScreen" id="9ya-HT-Tov"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="asn-f8-Nh4"/>
+                        <color key="backgroundColor" red="0.30196078430000001" green="0.66274509800000003" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ebg-YI-90u" firstAttribute="centerX" secondItem="oZj-73-13L" secondAttribute="centerX" id="0Yw-i4-9yw"/>
+                            <constraint firstItem="YMS-7j-94A" firstAttribute="leading" secondItem="asn-f8-Nh4" secondAttribute="leading" constant="50" id="23R-Gg-LiD"/>
+                            <constraint firstItem="DZe-lK-zV2" firstAttribute="leading" secondItem="oZj-73-13L" secondAttribute="leading" constant="30" id="6Ue-Mf-JM1"/>
+                            <constraint firstItem="ebg-YI-90u" firstAttribute="leading" secondItem="asn-f8-Nh4" secondAttribute="leading" constant="30" id="DDg-l2-emm"/>
+                            <constraint firstItem="ebg-YI-90u" firstAttribute="top" secondItem="1g9-fn-yFk" secondAttribute="bottom" constant="15" id="Ife-lK-jZk"/>
+                            <constraint firstAttribute="trailing" secondItem="DZe-lK-zV2" secondAttribute="trailing" constant="30" id="JOf-4n-ZdB"/>
+                            <constraint firstItem="LgV-fW-6d9" firstAttribute="centerX" secondItem="oZj-73-13L" secondAttribute="centerX" id="M1H-3d-17W"/>
+                            <constraint firstItem="asn-f8-Nh4" firstAttribute="trailing" secondItem="ebg-YI-90u" secondAttribute="trailing" constant="30" id="VAy-aY-Snq"/>
+                            <constraint firstItem="QCt-gZ-aC5" firstAttribute="top" secondItem="asn-f8-Nh4" secondAttribute="top" constant="120" id="VpK-nt-1CM"/>
+                            <constraint firstItem="1g9-fn-yFk" firstAttribute="top" secondItem="DZe-lK-zV2" secondAttribute="bottom" constant="30" id="cZc-oS-cDv"/>
+                            <constraint firstItem="asn-f8-Nh4" firstAttribute="trailing" secondItem="YMS-7j-94A" secondAttribute="trailing" constant="50" id="cZi-Tb-cNb"/>
+                            <constraint firstItem="YMS-7j-94A" firstAttribute="top" secondItem="LgV-fW-6d9" secondAttribute="bottom" constant="50" id="dAj-k6-A5c"/>
+                            <constraint firstItem="DZe-lK-zV2" firstAttribute="centerX" secondItem="oZj-73-13L" secondAttribute="centerX" id="fE6-2Q-MHt"/>
+                            <constraint firstItem="DZe-lK-zV2" firstAttribute="top" secondItem="QCt-gZ-aC5" secondAttribute="bottom" constant="15" id="nKR-R0-8cB"/>
+                            <constraint firstItem="1g9-fn-yFk" firstAttribute="centerX" secondItem="oZj-73-13L" secondAttribute="centerX" id="pgS-9V-wZ0"/>
+                            <constraint firstItem="QCt-gZ-aC5" firstAttribute="centerX" secondItem="oZj-73-13L" secondAttribute="centerX" id="qtr-uo-dKy"/>
+                            <constraint firstItem="asn-f8-Nh4" firstAttribute="bottom" secondItem="YMS-7j-94A" secondAttribute="bottom" constant="12" id="xwp-Qb-N0b"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonApps" destination="YMS-7j-94A" id="xyQ-yf-zxO"/>
+                        <outlet property="labelA" destination="DZe-lK-zV2" id="RaE-Be-IrI"/>
+                        <outlet property="labelB" destination="ebg-YI-90u" id="vO0-X1-4gR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bSu-gY-k2f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-160" y="-49"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DogOnboardLogo" width="225" height="252"/>
+        <image name="PaperLogo" width="36" height="33"/>
+        <image name="SearchLogo" width="34" height="35"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="text.magnifyingglass" catalog="system" width="128" height="115"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
